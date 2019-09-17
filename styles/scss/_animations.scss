@@ -1,0 +1,39 @@
+@-webkit-keyframes coloured-come-in {
+  0% { transform: translate(-100%, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@-moz-keyframes coloured-come-in {
+  0% { transform: translate(-100%, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@-o-keyframes coloured-come-in {
+  0% { transform: translate(-100%, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes coloured-come-in {
+  0% { transform: translate(-100%, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@-webkit-keyframes white-come-in {
+  0% { transform: translate(100%, 0); }
+  100% { tranform: translate(0, 0); }
+}
+
+@-moz-keyframes white-come-in {
+  0% { transform: translate(100%, 0); }
+  100% { tranform: translate(0, 0); }
+}
+
+@-o-keyframes white-come-in {
+  0% { transform: translate(100%, 0); }
+  100% { tranform: translate(0, 0); }
+}
+
+@keyframes white-come-in {
+  0% { transform: translate(100%, 0); }
+  100% { tranform: translate(0, 0); }
+}

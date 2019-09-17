@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cian Collier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7f22b759e.js"></script>
+    <script type="text/javascript">
+      function calculateVh() {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight / 100}px`);
+      }
+
+      calculateVh();
+      window.addEventListener('resize', calculateVh);
+    </script>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div id="hero">
+      <div id="background-img"></div>
+      <div class="half coloured">
+        <div>
+          <h1>Cian Collier</h1>
+          <h2>I Can Turn Your Idea Or Concept In To A Real Website.</h2>
+          <button id="button-projects"><i class="far fa-arrow-alt-circle-down"></i><br />My Work</button>
+        </div>
+      </div>
+      <div class="half white">
+        <div>
+          <h1>Cian Collier</h1>
+          <h2>I Can Turn Your Idea Or Concept In To A Real Website.</h2>
+          <button id="button-contact"><i class="far fa-handshake"></i><br />Hire Me</button>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="projects">
+      <div class="coloured">
+        <div id="project-gallery">
+          <div id="project-container">
+            <div class="project"><img src="img/Screenshot1.jpg" alt="Screenshot 1"><div id="pt1" class="project-title"><h3>HTML5 Breakout</h3><a href="#"><i class="far fa-eye"></i> View Project</a><a href="#"><i class="fab fa-github"></i> View Source</a></div></div>
+            <div class="project"><img src="img/Screenshot2.jpg" alt="Screenshot 2"><div id="pt2" class="project-title"><h3>Furniture Shop Frontend</h3><a href="#"><i class="far fa-eye"></i> View Project</a><a href="#"><i class="fab fa-github"></i> View Source</a></div></div>
+            <div class="project"><img src="img/Screenshot3.jpg" alt="Screenshot 3"><div id="p23" class="project-title"><h3>Cian Collier's Portfolio</h3><a href="#"><i class="far fa-eye"></i> View Project</a><a href="#"><i class="fab fa-github"></i> View Source</a></div></div>
+            <div class="project"><img src="img/Screenshot4.jpg" alt="Screenshot 4"><div id="pt4" class="project-title"><h3>Animated CSS Template</h3><a href="#"><i class="far fa-eye"></i> View Project</a><a class="github" href="#"><i class="fab fa-github"></i> View Source</a></div></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+          </div>
+          <div id="pagination">
+            <span class="page arrow"><i class="fas fa-angle-double-left"></i></span>
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="page">4</span>
+            <span class="page">5</span>
+            <span class="page arrow"><i class="fas fa-angle-double-right"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="white">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>Hello my name is Cian Collier, I am a web developer from Buckinghamshire in the UK.
+            Currently I mainly work with JavaScript (including modern frameworks and standards such as
+            ES6 and React.JS) but am also interested in working with other programming languages such as PHP
+            and Octave. Present projects include an E-commerce site and an neural network based approach to
+            identifying butterflies with machine learning.</p>
+            <p>if you like what yuo see on this portfoliio and think I would be a good fit for your project please
+              get in touch via the consultation booking form below and I will forward you a quote. In general prices range
+              from a few hundred pounds for a simple small business website to several thousand pounds for a full social networking
+              site.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="contact">
+      <div class="coloured">
+        <form>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="name">
+            <span>First Name:<br /><input type="text" name="firstname"></span>
+            <span>Last Name:<br /><input type="text" name="lastname"></span>
+          </div>
+          Email: <input type="text" name="email">
+          Phone: <input type="text" name="phone">
+          Please describe your project:<br /><textarea name="description"></textarea>
+          <input type="submit" value="Submit Contact">
+        </form>
+      </div>
+      <div class="white">
+        <div>
+          <ol>
+            <li>
+              <h2 class="section-title">Contact Me</h2>
+              <p>Please use the contact form to get in touch with your name, contact details and a brief outline of
+                your project. Then choose a time for a consultation.</p>
+            </li>
+            <li>
+              <h2 class="section-title">Consultation</h2>
+              <p>At the consultation by Skype or phone we can discuss the project in more detail. The discussion will cover
+                any ideas you have for the design of the project or any particular requirements for features etc... I will also
+                be able to give you a quote at the end of this meeting</p>
+            </li>
+            <li>
+              <h2 class="section-title">Proposal</h2>
+              <p>Within 48hrs of the original consultation I will send you a proposal for your approval containing the final quote
+              for the project. This will include a detailed design as well as a final summary of all features the app needs. If you approve the project I'll then get started on building your app.</p>
+            </li>
+            <li>
+              <h2 class="section-title">Launch</h2>
+              <p>Whilst I build the project I'll check in regularly with you to make sure the project is progressing as planned. When the final product is ready, I'll launch the product for you!</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('button[id*="button"]').on('click', function(e) {
+        e.preventDefault();
+        var split_id = e.target.id.split('-');
+
+        $('html, body').animate(
+          {
+            scrollTop: $("#" + split_id[1]).offset().top,
+          },
+          500,
+          'linear'
+        );
+      });
+
+      document.querySelectorAll('.coloured').forEach(coloured => {
+        coloured.addEventListener('click', () => {
+          document.querySelectorAll('.project-title').forEach(project => {
+            if (project.className.indexOf('active-links') >= 0) {
+              const classes = project.className.split(' ');
+              classes.splice(classes.indexOf('active-links'), 1);
+              project.className = classes.join(' ');
+            }
+          });
+        });
+      });
+
+      document.querySelectorAll('.project-title').forEach(clicked_project => clicked_project.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        document.querySelectorAll('.project-title').forEach(project => {
+          if (project.className.indexOf('active-links') >= 0) {
+            // .active-links is assigned to theis project
+
+            if (project.id != clicked_project.id) {
+              // Remove .active-links if this is not the clicked project
+              const classes = project.className.split(' ');
+              classes.splice(classes.indexOf('active-links'), 1);
+              project.className = classes.join(' ');
+            }
+          } else {
+            // If not already assigned .active-links
+
+            if (project.id == clicked_project.id) {
+              project.className += " active-links";
+            }
+          }
+        });
+      }));
+    </script>
+  </body>
+</html>
