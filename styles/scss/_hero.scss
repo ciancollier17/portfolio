@@ -1,0 +1,102 @@
+// Styling for the homepage hero
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh) * 100);
+
+  #background-img {
+    background: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh) * 100);
+    position: absolute;
+    z-index: -1000;
+  }
+
+  %half {
+    width: 50%;
+    height: 100vh;
+    height: calc(var(--vh) * 100);
+    z-index: 100;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  %hero-headers {
+    position: absolute;
+
+    h1 {
+      font-size: 4.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Source Serif Pro', serif;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      color: $h2-colour;
+    }
+
+    button {
+      display: block;
+      width: 7rem;
+      margin: auto;
+      background-color: Transparent;
+      border: none;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .coloured {
+    @extend %half;
+    background-color: $primary-colour;
+    opacity: 0.9;
+    @include animation-prefixes(coloured-come-in);
+
+    div {
+      @extend %hero-headers;
+      right: 0;
+      transform: translate(50%, 0);
+    }
+
+    h1 {
+      color: #ffffff;
+    }
+
+    button {
+      transform: translate(-80%, 0);
+      color: #ffffff;
+    }
+  }
+
+  .white {
+    @extend %half;
+    background-color: #ffffff;
+    opacity: 0.8;
+    @include animation-prefixes(white-come-in);
+
+    div {
+      @extend %hero-headers;
+      left: 0;
+      transform: translate(-50%, 0);
+    }
+
+    h1 {
+      color: $primary-colour;
+    }
+
+    button {
+      transform: translate(80%, 0);
+      color: $primary-colour;
+    }
+  }
+}
