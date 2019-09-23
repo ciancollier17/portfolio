@@ -12,4 +12,9 @@ gulp.task('wordpresscopy', function () {
     .pipe(gulp.dest('./wordpress_template_files/build/ciancolliersportfolio/'));
 });
 
-gulp.task('buildwordpress', gulp.series('wordpresscss', 'wordpresscopy'));
+gulp.task('wordpressimgcopy', function () {
+  return gulp.src('./styles/img/*.{jpg,jpeg,gif,png}')
+    .pipe(gulp.dest('./wordpress_template_files/build/ciancolliersportfolio/img/'));
+});
+
+gulp.task('buildwordpress', gulp.series('wordpresscss', 'wordpresscopy', 'wordpressimgcopy'));

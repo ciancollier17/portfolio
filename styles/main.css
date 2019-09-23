@@ -67,7 +67,7 @@ body {
   height: 100vh;
   height: calc(var(--vh) * 100); }
   #hero #background-img {
-    background: url("../img/background.jpg");
+    background: url("./img/background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
