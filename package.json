@@ -5,18 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"live-server\" \"node-sass -w styles/scss -o styles\""
+    "dev": "concurrently \"live-server\" \"node-sass -w styles/scss -o styles\"",
+    "buildwordpress": "node-sass styles/scss -o styles && gulp buildwordpress"
   },
   "author": "Cian Collier",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.2",
     "file-loader": "^4.2.0",
+    "gulp-concat": "^2.6.1",
     "html-loader": "^0.5.5",
     "live-server": "^1.2.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
     "webpack": "^4.39.3",
     "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }
