@@ -366,17 +366,20 @@ body {
       font-weight: bold;
       font-family: 'Roboto', sans-serif;
       margin: 0 0.5rem 0 0.5rem;
-      color: #ffffff;
+      color: #ad5c51;
+      background-color: #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s; }
-      #project-gallery #pagination .page:hover {
-        background-color: #ffffff;
-        color: #ad5c51; }
-    #project-gallery #pagination .active {
-      background-color: #ffffff;
-      color: #ad5c51; }
+    #project-gallery #pagination a {
+      text-decoration: none; }
+      #project-gallery #pagination a .page {
+        background-color: #ad5c51;
+        color: #ffffff; }
+        #project-gallery #pagination a .page:hover {
+          background-color: #ffffff;
+          color: #ad5c51; }
     #project-gallery #pagination .arrow {
       background: #ffffff;
       color: #ad5c51;
