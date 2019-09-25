@@ -105,6 +105,8 @@ body {
       border: none;
       font-size: 1.2rem;
       margin-top: 1rem; }
+      #hero .coloured div button i, #hero .white div button i {
+        pointer-events: none; }
   #hero .coloured {
     background-color: #ad5c51;
     opacity: 0.9;

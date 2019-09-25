@@ -30,4 +30,14 @@ gulp.task('wordpressimgcopy', function () {
   }
 });
 
-gulp.task('buildwordpress', gulp.series('wordpresscss', 'wordpresscopy', 'wordpressimgcopy'));
+gulp.task('wordpressscriptsconcat', function () {
+  if (config.WORDPRESS_BUILD_PATH) {
+    return gulp.src('./scripts/*.js')
+      .pipe(concat('scripts.js'))
+      .pipe(gulp.dest(config.WORDPRESS_BUILD_PATH + "ciancolliersportfolio/"));
+  } else {
+    console.log("Please Set WORDPRESS_BUILD_PATH in config.js");
+  }
+})
+
+gulp.task('buildwordpress', gulp.series('wordpresscss', 'wordpresscopy', 'wordpressimgcopy', 'wordpressscriptsconcat'));

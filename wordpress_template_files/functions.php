@@ -3,6 +3,8 @@
     wp_enqueue_script('jquery');
     wp_register_script('FontAwesome', "https://kit.fontawesome.com/f7f22b759e.js");
     wp_enqueue_script('FontAwesome');
+    wp_register_script('CianCollierScripts', get_template_directory_uri() . "/scripts.js", array('jquery'), false, true);
+    wp_enqueue_script('CianCollierScripts');
     wp_register_style('CianCollierMainStylesheet', get_stylesheet_uri());
     wp_enqueue_style('CianCollierMainStylesheet');
     wp_register_style('CianCollierFonts', 'https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro&display=swap');
@@ -41,5 +43,5 @@
   add_action('admin_init', 'ciancollier_register_settings');
 
   // Add support for thumbnails for displaying them on the project gallery
-  add_theme_support('post-thumbnails'); 
+  add_theme_support('post-thumbnails');
 ?>

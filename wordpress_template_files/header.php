@@ -4,14 +4,6 @@
     <meta charset="utf-8">
     <title><?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript">
-      function calculateVh() {
-        document.documentElement.style.setProperty('--vh', `${window.innerHeight / 100}px`);
-      }
-
-      calculateVh();
-      window.addEventListener('resize', calculateVh);
-    </script>
     <?php wp_head(); ?>
   </head>
   <body>

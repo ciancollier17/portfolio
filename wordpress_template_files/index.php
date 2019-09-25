@@ -18,12 +18,16 @@
          <?php endif; ?>
       </div>
       <div id="pagination">
-        <?php echo paginate_links(array(
-          "prev_text" => "<span class=\"page arrow\"><i class=\"fas fa-angle-double-left\"></i></span>",
-          "next_text" => "<span class=\"page arrow\"><i class=\"fas fa-angle-double-right\"></i></span>",
-          "before_page_number" => "<span class=\"page\">",
-          "after_page_number" => "</span>"
-        )); ?>
+        <?php
+          echo paginate_links(array(
+            "prev_text" => "<span class=\"page arrow\"><i class=\"fas fa-angle-double-left\"></i></span>",
+            "next_text" => "<span class=\"page arrow\"><i class=\"fas fa-angle-double-right\"></i></span>",
+            "before_page_number" => "<span class=\"page\">",
+            "after_page_number" => "</span>",
+            "format" => '/page/%#%',
+            "base" => home_url() . "%_%#project-gallery"
+          ));
+        ?>
       </div>
     </div>
   </div>
