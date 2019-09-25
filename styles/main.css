@@ -389,9 +389,28 @@ body {
 
 .content-project {
   width: 75%;
-  margin: auto; }
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1.5rem; }
   .content-project h1 {
     font-family: 'Source Serif Pro', serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ad5c51;
     text-transform: uppercase; }
+  .content-project i {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0; }
+  .content-project a {
+    color: #ad5c51;
+    text-decoration: none; }
+  .content-project #tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem 0; }
+    .content-project #tags .tag {
+      border: 0.18rem solid #ad5c51;
+      border-radius: 10px;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      font-weight: bold; }
