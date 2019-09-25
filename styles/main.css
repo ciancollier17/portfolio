@@ -386,3 +386,12 @@ body {
       background: #ffffff;
       color: #ad5c51;
       margin: 0 1rem 0 1rem; }
+
+.content-project {
+  width: 75%;
+  margin: auto; }
+  .content-project h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 4rem;
+    color: #ad5c51;
+    text-transform: uppercase; }
