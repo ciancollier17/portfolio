@@ -17,7 +17,7 @@ document.querySelectorAll('.project-title').forEach(clicked_project => clicked_p
     if (project.className.indexOf('active-links') >= 0) {
       // .active-links is assigned to theis project
 
-      if (project.id != clicked_project.id) {
+      if (project.id != e.target.id) {
         // Remove .active-links if this is not the clicked project
         const classes = project.className.split(' ');
         classes.splice(classes.indexOf('active-links'), 1);
@@ -26,7 +26,7 @@ document.querySelectorAll('.project-title').forEach(clicked_project => clicked_p
     } else {
       // If not already assigned .active-links
 
-      if (project.id == clicked_project.id) {
+      if (project.id == e.target.id) {
         project.className += " active-links";
       }
     }

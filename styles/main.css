@@ -400,6 +400,9 @@ body {
       margin-top: 0; }
   .content-project img {
     margin: 1rem; }
+  @media only screen and (max-width: 600px) and (min-height: 500px) {
+    .content-project figure {
+      width: 100%; } }
   .content-project h1 {
     font-family: 'Source Serif Pro', serif;
     font-size: 3rem;
@@ -432,6 +435,11 @@ body {
     color: #ffffff; }
     .content-project #home-button-link i {
       font-size: 1.5rem; }
+    @media only screen and (max-width: 600px) and (min-height: 500px) {
+      .content-project #home-button-link {
+        padding: 0 0.4rem 0 0.4rem; }
+        .content-project #home-button-link i {
+          font-size: 1rem; } }
   .content-project .featured-img {
     width: 40%;
     height: auto;

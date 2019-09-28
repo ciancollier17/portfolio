@@ -20,6 +20,12 @@
     margin: 1rem;
   }
 
+  figure {
+    @include phone-portrait {
+      width: 100%;
+    }
+  }
+
   h1 {
     font-family: 'Source Serif Pro', serif;
     font-size: 3rem;
@@ -63,6 +69,14 @@
 
     i {
       font-size: 1.5rem;
+    }
+
+    @include phone-portrait {
+      padding: 0 0.4rem 0 0.4rem;
+
+      i {
+        font-size: 1rem;
+      }
     }
   }
 
