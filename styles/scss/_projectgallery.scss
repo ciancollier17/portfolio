@@ -77,6 +77,18 @@
 
         &:hover {
           opacity: 0.8;
+
+          @include phone-portrait {
+            opacity: 0;
+          }
+
+          @include phone-landscape {
+            opacity: 0;
+          }
+
+          @include tablet-portrait {
+            opacity: 0;
+          }
         }
 
         h3 {
@@ -86,11 +98,17 @@
           color: darken($primary-colour, 20%);
 
           @include phone-portrait {
+            display: none;
             font-size: 0.8rem;
           }
 
           @include phone-landscape {
+            display: none;
             font-size: 0.7rem;
+          }
+
+          @include tablet-portrait {
+            display: none;
           }
         }
 
@@ -117,7 +135,17 @@
       }
 
       .active-links {
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
         a {
+          display: block;
+        }
+
+        h3 {
           display: block;
         }
       }
@@ -150,7 +178,7 @@
 
     a {
       text-decoration: none;
-      
+
       .page {
         background-color: $primary-colour;
         color: #ffffff;

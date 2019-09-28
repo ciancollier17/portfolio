@@ -1,4 +1,4 @@
-// Styles for project single pages
+// Styles for project single pages and archives
 
 .content-project {
   width: 75%;
@@ -124,5 +124,23 @@
         }
       }
     }
+  }
+
+  .archive-post {
+    display: block;
+    clear: both;
+    margin-top: 2rem;
+
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+      width: 100%;
+      border: 1px solid lighten($primary-colour, 20%);
+    }
+  }
+
+  .archive-title {
+    color: darken($primary-colour, 30%);
   }
 }

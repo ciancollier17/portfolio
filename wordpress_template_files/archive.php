@@ -1,9 +1,10 @@
 <?php get_header(); ?>
-
 <div class="content-project">
+  <h1 class="archive-title"><?php echo "Projects Related To: " . get_query_var('tag'); ?></h1>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <div class="archive-post">
     <h1><?php the_title(); ?></h1>
-    <i><?php echo "<a href=\"#\">"; the_author(); echo "</a> on <a href=\"#\">"; the_date(); echo "</a>"; ?></i>
+    <i><?php echo "<a href=\"#\">"; the_author(); echo "</a> on <a href=\"#\">"; echo get_the_date(); echo "</a>"; ?></i>
     <br />
     <div id = "tags">
     <?php
@@ -37,10 +38,9 @@
       </div>
     </div>
     <?php the_content(); ?>
+    </div>
   <?php endwhile; else : ?>
    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
 </div>
-</div>
-
 <?php get_footer(); ?>
