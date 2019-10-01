@@ -13,7 +13,7 @@
     <div>
       <h1><?php bloginfo('name'); ?></h1>
       <h2><?php bloginfo('description'); ?></h2>
-      <button id="button-contact"><i class="far fa-handshake"></i><br />Hire Me</button>
+      <button id="button-contact"><i class="far fa-handshake"></i><br />Email Me</button>
     </div>
   </div>
 </div>
@@ -56,6 +56,23 @@
       <h2 class="section-title">About Me</h2>
       <?php echo get_option('about-section'); ?>
     </div>
+  </div>
+</div>
+
+<div class="content" id="contact">
+  <div class="coloured">
+    <?php if (is_active_sidebar('contact_coloured')) : ?>
+      <div class="widget-container">
+        <?php dynamic_sidebar('contact_coloured'); ?>
+      </div>
+    <?php endif; ?>
+  </div>
+  <div class="white">
+    <?php if (is_active_sidebar('contact_white')) : ?>
+      <div>
+        <?php dynamic_sidebar('contact_white'); ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
 

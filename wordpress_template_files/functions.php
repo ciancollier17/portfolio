@@ -38,9 +38,30 @@
     echo "<textarea id='about' name='about-section'>" . $current_value . "</textarea>";
   }
 
+  function ciancollier_register_sidebars() {
+    register_sidebar(array(
+		   'name' => 'Contact Coloured',
+		   'id' => 'contact_coloured',
+		   'before_widget' => '',
+		   'after_widget' => '',
+		   'before_title' => '<h2 class="section-title">',
+		   'after_title' => '</h2>'
+	  ));
+
+    register_sidebar(array(
+		   'name' => 'Contact White',
+		   'id' => 'contact_white',
+		   'before_widget' => '',
+		   'after_widget' => '',
+		   'before_title' => '<h2 class="section-title">',
+		   'after_title' => '</h2>'
+	  ));
+  }
+
   add_action('wp_enqueue_scripts', 'ciancollier_get_scripts');
   add_action('admin_menu', 'ciancollier_admin_menu');
   add_action('admin_init', 'ciancollier_register_settings');
+  add_action('widgets_init', 'ciancollier_register_sidebars');
 
   // Add support for thumbnails for displaying them on the project gallery
   add_theme_support('post-thumbnails');

@@ -32,12 +32,16 @@
     @extend %half-content;
     background-color: $primary-colour;
 
+    .widget-container {
+      padding: 1.5rem;
+    }
+
     .section-title {
       @extend %section-title;
       color: #ffffff;
     }
 
-    form {
+    .wpforms-form, form {
       padding: 1.5rem;
       color: #ffffff;
       font-weight: bold;
@@ -73,13 +77,28 @@
         }
       }
 
-      input {
+      .wpforms-field input, input {
         @extend %form-component;
         height: 1.5rem;
         border-radius: 1.5rem;
       }
 
+      .wpforms-field {
+        padding: 0;
+      }
+
       [type="submit"] {
+        width: 14rem;
+        border: 0.15rem solid #ffffff;
+
+        &:hover {
+          background-color: #ffffff;
+          color: $primary-colour;
+        }
+      }
+
+      .wpforms-submit {
+        @extend %form-component;
         width: 14rem;
         border: 0.15rem solid #ffffff;
 
@@ -114,6 +133,11 @@
 
     div {
       padding: 1.5rem;
+
+      a {
+        color: $primary-colour;
+        text-decoration: none;
+      }
     }
 
     .section-title {
