@@ -145,7 +145,7 @@ body {
   @media only screen and (max-width: 1200px) {
     .content {
       flex-direction: column-reverse; } }
-  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 1100px) {
+  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 800px) {
     .content {
       flex-direction: column-reverse; } }
   .content .coloured, .content .white {
@@ -257,7 +257,7 @@ body {
     .content .white {
       min-height: 100vh;
       height: unset; } }
-  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 1100px) {
+  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 800px) {
     .content .coloured, .content .white {
       width: 100%; }
     .content .white {
