@@ -145,7 +145,7 @@ body {
   @media only screen and (max-width: 1200px) {
     .content {
       flex-direction: column-reverse; } }
-  @media only screen and (min-width: 1000px) and (min-height: 700px) and (max-height: 1100px) {
+  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 1100px) {
     .content {
       flex-direction: column-reverse; } }
   .content .coloured, .content .white {
@@ -171,7 +171,7 @@ body {
       font-weight: bold;
       font-family: 'Roboto', sans-serif;
       width: 100%; }
-      @media only screen and (min-width: 700px) and (min-height: 900px) {
+      @media only screen and (min-width: 700px) and (max-width: 1200px) and (min-height: 900px) {
         .content .coloured .wpforms-form, .content .coloured form {
           width: 80%;
           margin-left: auto;
@@ -257,7 +257,7 @@ body {
     .content .white {
       min-height: 100vh;
       height: unset; } }
-  @media only screen and (min-width: 1000px) and (min-height: 700px) and (max-height: 1100px) {
+  @media only screen and (min-width: 1000px) and (max-width: 2000px) and (min-height: 700px) and (max-height: 1100px) {
     .content .coloured, .content .white {
       width: 100%; }
     .content .white {
@@ -296,7 +296,7 @@ body {
           margin-left: auto;
           margin-right: auto;
           position: relative; } }
-      @media only screen and (min-width: 700px) and (min-height: 900px) {
+      @media only screen and (min-width: 700px) and (max-width: 1200px) and (min-height: 900px) {
         #project-gallery #project-container .project {
           height: 12vh;
           width: 36%;
@@ -340,7 +340,7 @@ body {
           @media only screen and (max-width: 900px) and (max-height: 500px) {
             #project-gallery #project-container .project .project-title:hover {
               opacity: 0; } }
-          @media only screen and (min-width: 700px) and (min-height: 900px) {
+          @media only screen and (min-width: 700px) and (max-width: 1200px) and (min-height: 900px) {
             #project-gallery #project-container .project .project-title:hover {
               opacity: 0; } }
         #project-gallery #project-container .project .project-title h3 {
@@ -356,7 +356,7 @@ body {
             #project-gallery #project-container .project .project-title h3 {
               display: none;
               font-size: 0.7rem; } }
-          @media only screen and (min-width: 700px) and (min-height: 900px) {
+          @media only screen and (min-width: 700px) and (max-width: 1200px) and (min-height: 900px) {
             #project-gallery #project-container .project .project-title h3 {
               display: none; } }
         #project-gallery #project-container .project .project-title a {
@@ -369,7 +369,7 @@ body {
             #project-gallery #project-container .project .project-title a {
               font-size: 0.7rem;
               display: none; } }
-          @media only screen and (min-width: 700px) and (min-height: 900px) {
+          @media only screen and (min-width: 700px) and (max-width: 1200px) and (min-height: 900px) {
             #project-gallery #project-container .project .project-title a {
               display: none; } }
           @media only screen and (max-width: 600px) and (min-height: 500px) {
