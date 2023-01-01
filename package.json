@@ -12,13 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.2",
-    "file-loader": "^4.2.0",
+    "file-loader": "^6.2.0",
     "gulp-concat": "^2.6.1",
-    "html-loader": "^0.5.5",
+    "html-loader": "^4.2.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.0",
-    "webpack": "^4.39.3",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
